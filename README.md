@@ -13,7 +13,7 @@ Descripcion del proyecto
 |Case|Sensor: tarjeta ESP32, con la utilzacion de una bosina |
 |Solar o alimentación alternativa|Batería lipo, de carga normal para dispositivos de alerta|
 |Entrada de datos por el usuario|Para activar la bosina, el usuario final debe habilitar un punto de acceso, con el ssid y el password indicado en el documento|
-|Etapas: 1.|Prueba en San José: Solo un finder que con la configuracion de acceso a intenert para que se active la bosina, un dispositivo de alerta. |
+|Etapas: 1.|Prueba : Solo un finder que con la configuracion de acceso a intenert para que se active la bosina, un dispositivo de alerta. |
 |2.|Producción : Agregar la funcionalidad de la bateria externa|
 |3.|Futuro: Disminuir el tamano de los componentes a utilizar para que sea accesible y demas utilidad y con esto iniciar la produccion en masa
 |Hardware: Dispositivo Sensor|TTGO-ESP32 con pantalla, batería lipo|
@@ -23,12 +23,12 @@ Descripcion del proyecto
 
 ## COMO ENSAMBLAR
 
-Se debe colocar el cable de corriente y de tierra en el lugar donde lo describe la ttgo y ademas colocar el pin de la bosina en el pin 16 de la ttgo.
+Se debe colocar el cable de corriente al ping de voltage de la ttgo y de tierra en el pin de tirra de la ttgo, ademas colocar el pin de la bosina en el pin 16 de la ttgo.
 
 
 ## COMO CARGAR EL SOFTWARE 
 
-Se debe cargar la libreria  Tone-master y cargar el software a la tableta ttgo. 
+Se debe cargar la libreria  Tone-master y cargar el software finder a la tableta ttgo. 
 
 
 ##  Se documenta el uso general del proyecto
