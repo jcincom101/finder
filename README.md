@@ -10,17 +10,29 @@ Descripcion del proyecto
 |Item|Respuesta|
 |----|-------|
 |Nombre de proyecto|Finder|
-|Case|Sensor: Case IP profesional, con antena externa. Alerta: Case en epoxy transparente|
-|Solar o alimentación alternativa|Solar y batería grande para sensor de rayería, carga inductiva para dispositivos de alerta|
-|Presentación de datos al usuario|Existen gráficas de AdafruitIO. Los dispositivos de alerta tienen una pantalla con el número de eventos en la última hora|
-|Entrada de datos por el usuario|Ninguno|
-|Etapas: 1.|Prueba en San José: Solo un sensor de rayería, un dispositivo de alerta. Comparar con [Lightning maps](https://www.lightningmaps.org/)|
-|2.|Producción en Isla del Coco: Tres sensores individuales de rayería, en posiciones opuestas. Varios sensores de alerta.|
-|3.|Futuro: Realizar cálculo de Time-of-Arrival (TOA), para poder localizar rayos en un mapa. Compatibilidad con [Blitzortung](http://es.blitzortung.org/cover_your_area.php)|
-|Hardware: Dispositivo Sensor|TTGO-TBeam, batería 18650, [sensor EMP](https://www.tindie.com/products/SMDKing/emp-sensor-detect-lightning-and-other-phenomena/)|
-|Hardware: Dispositivo de Alerta|TTGO ESP32+OLED, batería, cargador inductivo. Alertas visuales y auditivas a definir.|
-|Servicios|Adafruit.IO|
-|Software|En Arduino, y Node-Red|
-|Posibles problemas|Sensor de rayería, carga inductiva, case en epoxy transparente, AdafruitIO en Node-RED|
+|Case|Sensor: tarjeta ESP32, con la utilzacion de una bosina |
+|Solar o alimentación alternativa|Batería lipo, de carga normal para dispositivos de alerta|
+|Entrada de datos por el usuario|Para activar la bosina, el usuario final debe habilitar un punto de acceso, con el ssid y el password indicado en el documento|
+|Etapas: 1.|Prueba en San José: Solo un finder que con la configuracion de acceso a intenert para que se active la bosina, un dispositivo de alerta. |
+|2.|Producción : Agregar la funcionalidad de la bateria externa|
+|3.|Futuro: Disminuir el tamano de los componentes a utilizar para que sea accesible y demas utilidad y con esto iniciar la produccion en masa
+|Hardware: Dispositivo Sensor|TTGO-ESP32 con pantalla, batería lipo|
+|Hardware: Dispositivo de Alerta|Bosina , batería, cargador inductivo. Alertas visuales y auditivas a definir.|
+|Posibles problemas|Que se encuentre una red wireless y que se altere la bosina|
 
-  
+
+## COMO ENSAMBLAR
+
+Se debe colocar el cable de corriente y de tierra en el lugar donde lo describe la ttgo y ademas colocar el pin de la bosina en el pin 16 de la ttgo.
+
+
+## COMO CARGAR EL SOFTWARE 
+
+Se debe cargar la libreria  Tone-master y cargar el software a la tableta ttgo. 
+
+
+##  Se documenta el uso general del proyecto
+
+Para que se inicie el buscador se debe configurar un AP (Punto de acceso) en con el ssid p20 y la contrasena 123456789 para que el sensor se active. 
+
+
